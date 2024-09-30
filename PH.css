@@ -1,0 +1,195 @@
+body{
+	background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+		/**   BARRA **/
+
+.head{
+	width: 100%;
+	height: 60px;
+	padding-left: 30px;
+
+	margin-top: 8px;
+	margin-left: 8px;
+}
+
+.head_item{
+	display: flex;
+    background-color: black;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.head_a{
+	font-family: sans-serif;
+	color: gray;
+	transition: color 0.5s ease;
+	margin-left:15px ;
+	margin-right: 15px;
+	text-decoration: none;
+}
+
+.head_a:hover{
+	color: white;
+}
+
+
+
+		/* SECCION 1 */
+section{
+	display: flex;
+}
+
+.header-section1{
+	align-content: center;
+	justify-content: center;
+
+	margin-left: 50px;
+
+	margin-bottom: 50px;
+}
+
+h1{
+	color: white;
+	font-family: sans-serif;
+	font-size: 60px;
+}
+
+.p-intro{
+	color: gray;
+	margin-top: 40px;
+}
+
+
+/* GALERÍA DE IMÁGENES */
+
+.img-section {
+    background-color:dark;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    height: 600px;
+
+    margin-right: 0px;
+    margin-top: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-galeria {
+    display: grid;
+    place-items: center;
+    width: 550px;
+
+    margin-right: 50px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 550px;
+    height: 550px;
+}
+
+.contenedor-imagen {
+    position: relative;
+    left: 0;
+    width: 80px;
+    border-radius: 5px;
+    height: 450px;
+    overflow: hidden;
+    background-color: #efefef;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgb(0, 0, 0, 0.5);
+    flex: 0.25;
+}
+
+.contenedor-imagen img {
+    height: 450px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.contenedor-imagen:hover {
+    flex: 2;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+		/* SECCION 1 EXPLICACION*/
+
+		/* SECCION 1 */
+
+.section{
+    position: relative;
+    background-image: url('exp/ph.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.h1-sec, .p-sec {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    text-align: center;
+}
+
+.h1-sec{
+    font-size: 90px;
+    margin-bottom: 120px;
+}
+
+.p-sec {
+    font-size: 20px;
+    margin-top: 16PX;
+    line-height: 1.5;
+}
+
+.div-sec{
+	align-content: center;
+	width: 75%;
+}
+
+#sec1{
+	background-image: url('exp/ph.webp');
+}
+
+#sec2{
+	background-image: url('exp/bicsodio.webp');
+}
+
+#sec3{
+	background-image: url('exp/vinagre.jpg');
+}
+
+#sec4{
+	background-image: url('exp/suelo.jpg');
+}
+
+#sec5{
+	background-image: url('exp/suelo-arido.jpg');
+}

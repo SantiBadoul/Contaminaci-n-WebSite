@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.head {
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.head_item {
+    display: flex;
+    background-color: #121212;
+    padding: 10px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.head_a {
+    font-family: sans-serif;
+    color: gray;
+    transition: color 0.5s ease;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.head_a:hover {
+    color: white;
+}
+
+/* ESTILOS DEL CUERPO */
+body {
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+}
+
+/* GALERÍA DE IMÁGENES */
+.img-gallery {
+    width: 70%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-gallery img {
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+.img-gallery img:hover {
+    transform: scale(1.15);
+    filter: brightness(0.7);
+}
+
+/* TEXTO AL HACER HOVER SOBRE LAS IMÁGENES */
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-container:hover .hover-text {
+    opacity: 1;
+}
+
+/* ESTILOS PARA IMAGEN EN PANTALLA COMPLETA */
+.ful-img {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.ful-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ful-img img {
+    width: 90%;
+    max-width: 600px;
+}
+
+/* ESTILOS RESPONSIVOS */
+@media screen and (max-width: 400px) {
+    .head_item {
+        flex-direction: column;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .img-gallery {
+        width: 90%;
+    }
+
+    .hover-text {
+        font-size: 20px;
+    }
+}

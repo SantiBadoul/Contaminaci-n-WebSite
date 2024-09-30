@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; 
+    color: #ffffff;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+        /**   BARRA **/
+
+.head{
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.head_item{
+    display: flex;
+    background-color: #121212;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.head_a{
+    font-family: sans-serif;
+    color: gray;
+    transition: color 0.5s ease;
+    margin-left:15px ;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.head_a:hover{
+    color: white;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilo de los encabezados */
+th {
+    background-color: #1e1e1e; /* Fondo de encabezado oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #333; /* Línea de separación */
+}
+
+/* Estilo de las celdas */
+td {
+    background-color: #232323; /* Fondo de celda oscuro */
+    padding: 15px;
+    border-bottom: 1px solid #444; /* Línea de separación */
+}
+
+/* Efecto de hover en las celdas */
+tr:hover td {
+    background-color: #3a3a3a; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para la última fila */
+tr:last-child td {
+    border-bottom: none; /* Elimina la línea de borde de la última fila */
+}
+
+/* Estilo para el cuerpo de la tabla */
+tbody tr:nth-child(even) td {
+    background-color: #2a2a2a; /* Alterna el color de fondo para las filas pares */
+}
+
+/* Estilo para el cuerpo de la tabla */
+tbody tr:nth-child(odd) td {
+    background-color: #232323; /* Color de fondo para filas impares */
+}
+
+/* Ajustes de responsividad */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block; /* Hacemos que la tabla sea responsiva */
+    }
+    th {
+        display: none; /* Ocultamos los encabezados en pantallas pequeñas */
+    }
+    tr {
+        margin-bottom: 15px; /* Espacio entre filas */
+    }
+    td {
+        text-align: right; /* Alineamos el texto a la derecha */
+        padding-left: 50%; /* Añadimos espacio para la etiqueta */
+        position: relative; /* Posicionamos elementos */
+    }
+    td:before {
+        content: attr(data-label); /* Mostramos la etiqueta */
+        position: absolute;
+        left: 10px;
+        width: 45%; /* Espacio para la etiqueta */
+        padding-left: 10px;
+        text-align: left; /* Alineamos a la izquierda */
+        font-weight: bold; /* Hacemos la etiqueta en negrita */
+    }
+}

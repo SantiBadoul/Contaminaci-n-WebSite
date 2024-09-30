@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bot.css">
+	<title>Chat</title>
+</head>
+<body>
+	<section class="head">
+		<nav class="head_item">
+			<a class="head_a" href="inicio.html">Inicio</a>
+			<a class="head_a" href="nosotros.html">Sobre Nosotros</a>
+			<a class="head_a" href="exp.html">Experimentación</a>
+			<a class="head_a" href="bdd.html">Base de Datos</a>
+        	<a class="head_a" id="bot" href="bot.html">Chat</a>
+		</nav>
+	</section>
+
+	<button id="toggle-chat" onclick="toggleChat()">W A.I.</button>
+
+    <section class="chatbot-sec">
+        <div class="chat-container" id="chat-container">
+            <div id="chat-box" class="chat-box">
+                <!-- Mensajes aparecerán aquí -->
+            </div>
+            <div class="input-area">
+                <input class="input" type="text" id="user-input" placeholder="Hazme una pregunta..." autofocus>
+                <button class="enviar" onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="prueba">
+    	
+    </div>
+
+    <script src="bot.js"></script>
+</body>
+</html>

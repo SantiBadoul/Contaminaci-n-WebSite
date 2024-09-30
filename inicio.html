@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="inicio.css">
+	<title></title>
+</head>
+<body>
+	<section class="head">
+        <nav class="head_item">
+            <a class="head_a" href="inicio.html">Inicio</a>
+            <a class="head_a" href="nosotros.html">Sobre Nosotros</a>
+            <a class="head_a" href="proy.html">Proyectos</a>
+            <a class="head_a" href="bdd.html">Base de Datos</a>
+            <a class="head_a" id="info">Info</a>
+        </nav>
+    </section>
+
+	<div class="section">
+    	<div class="text-section">
+    		<h1>UN LLAMADO DE ATENCIÓN URGENTE</h1>
+
+    		<p class="p-section">Los basurales a cielo abierto representan una amenaza inmediata para la salud pública y el medio ambiente. Los residuos mal gestionados no solo contaminan nuestro suelo, aire y agua, sino que también comprometen la biodiversidad local que es vital para nuestro ecosistema. Cada vez que descuidamos la correcta disposición de los desechos, estamos afectando directamente la calidad de vida de nuestros vecinos, nuestras familias, y el futuro de nuestra localidad.</p>
+  		</div>
+
+  		<div class="image-section">
+    		<img src="basural.jpg" alt="Imagen de fondo">
+  		</div>
+	</div>
+
+	<div class="section2">
+    	<div class="text-section2">
+    		<h1>Chilecito, el Futuro que Podemos Construir Hoy</h1>
+
+    		<p class="p-section2">A las afueras de nuestra querida ciudad de Chilecito, un problema silencioso está afectando lo que más valoramos: nuestra tierra, nuestro aire, nuestra agua. Los basurales a cielo abierto que rodean nuestra comunidad no son solo montañas de desperdicios, son montañas de oportunidades perdidas, de vidas impactadas, de futuros comprometidos.</p>
+  		</div>
+
+  		<div class="image-section2">
+    		<img src="chilecito.jpg" alt="Imagen de fondo">
+  		</div>
+	</div>
+
+
+	<section class="gallery-img-sec">
+		<div class="gallery-div">
+			<h1 class="gallery-h1">BASURALES EN CHILECITO</h1>
+			<p class="p-gallery">En las siguientes imagenes podemos encontrar algunos de los basurales más populares de Chilecito: Río de Los Sarmientos, Av. La Mexicana (RP15) y Camino a Famatina (RN40)</p>
+		</div>
+		<div class="gallery-container">
+	        <button class="prev-btn" onclick="prevImage()">&#10094;</button>
+	        
+	        <div class="gallery-wrapper">
+	            <div class="gallery-slide">
+	                <img src="basurales/puntilla.png" alt="Image 1">
+	                <img src="basurales/puente.png" alt="Image 2">
+	                <img src="basurales/mexicana.png" alt="Image 3">
+	                <img src="basurales/famatina.png" alt="Image 4">
+	            </div>
+	        </div>
+
+	        <button class="next-btn" onclick="nextImage()">&#10095;</button>
+	    </div>
+	</section>
+
+	<section class="chatbot-sec">
+        <div class="chat-container" id="chat-container">
+            <div id="chat-box" class="chat-box">
+                <!-- Mensajes aparecerán aquí -->
+            </div>
+            <div class="input-area">
+                <input class="input" type="text" id="user-input" placeholder="Hazme una pregunta..." autofocus>
+                <button class="enviar" onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <button id="toggle-chat" onclick="toggleChat()">W-A.I.</button>
+
+	<script src="inicio.js"></script>
+
+	<footer>
+        <p>© 2024 Información Ambiental Chilecito - Alumnos de Cuarto Año de la Escuela Privada Jean Piaget</p>
+    </footer>
+</body>
+</html>
